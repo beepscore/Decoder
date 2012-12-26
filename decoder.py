@@ -18,6 +18,12 @@ class Decoder:
            decodedString = decodedString + aCipher[aChar]
         return decodedString
 
+    # inserts spaces in string to visually separate underscore characters
+    def spacedString(self, aString):
+        spacedString = ''
+        for aChar in aString:
+           spacedString = spacedString + aChar + ' '
+        return spacedString
     
 def main():
 
@@ -85,8 +91,8 @@ def main():
 
     decodedString = decoder.decode(clue2, cipher2)
 
-    print(clue2)
-    print(decodedString)
+    print(decoder.spacedString(clue2))
+    print(decoder.spacedString(decodedString))
 
 if __name__ == "__main__": main()
 
