@@ -7,43 +7,15 @@
 class Decoder:
     # In a class method, always list self as first parameter
     def __init__(self):
+        print("init")
 
-        self._cipher = {' ': ' ',
-                      'a': 'A',
-                      'b': 'B',
-                      'c': 'C',
-                      'd': 'D',
-                      'e': 'E',
-                      'f': 'F',
-                      'g': 'G',
-                      'h': 'H',
-                      'i': 'I',
-                      'j': 'J',
-                      'k': 'K',
-                      'l': 'L',
-                      'm': 'M',
-                      'n': 'N',
-                      'o': 'O',
-                      'p': 'P',
-                      'q': 'Q',
-                      'r': 'R',
-                      's': 'S',
-                      't': 'T',
-                      'u': 'U',
-                      'v': 'V',
-                      'w': 'W',
-                      'x': 'X',
-                      'y': 'Y',
-                      'z': 'Z' }
+    def decode(self, aString, aCipher):
 
-    #accessor method
-    def get_cipher(self):
-        return self._cipher
+        aString = aString.lower()
 
-    def decode(self, aString):
         decodedString = ''
         for aChar in aString:
-           decodedString = decodedString + self.get_cipher()[aChar]
+           decodedString = decodedString + aCipher[aChar]
         return decodedString
 
     
@@ -51,10 +23,69 @@ def main():
 
     decoder = Decoder(); 
 
-    codedString = 'lsaj sdlfa'
-    decodedString = decoder.decode(codedString)
+    clue1 = "Jp wqfht ups csij bqqz jmq zrstfqn xkohtf tpnjmlknai"
+    clue2 = "Zfxjx vjx v rdanxj qb nvoo nxvjmrpt mrtmex zfx Mtmt"
+    clue3 = "Grb yfqq ytfzdmxj wfm fqrfsj yt ctfze dmjdet, ykg sbk mtte gb ctfz gcztt yfqq ytfzdmxj du sbk rfmg gb hzbxztjj"
 
-    print(codedString)
+    cipher1 = {' ': ' ',
+              'a': '_',
+              'b': '_',
+              'c': '_',
+              'd': '_',
+              'e': '_',
+              'f': '_',
+              'g': '_',
+              'h': '_',
+              'i': '_',
+              'j': '_',
+              'k': '_',
+              'l': '_',
+              'm': '_',
+              'n': '_',
+              'o': '_',
+              'p': '_',
+              'q': '_',
+              'r': '_',
+              's': '_',
+              't': '_',
+              'u': '_',
+              'v': '_',
+              'w': '_',
+              'x': '_',
+              'y': '_',
+              'z': '_' }
+
+    cipher2 = {' ': ' ',
+              'a': '_',
+              'b': '_',
+              'c': '_',
+              'd': '_',
+              'e': '_',
+              'f': '_',
+              'g': '_',
+              'h': '_',
+              'i': '_',
+              'j': '_',
+              'k': '_',
+              'l': '_',
+              'm': '_',
+              'n': '_',
+              'o': '_',
+              'p': '_',
+              'q': '_',
+              'r': '_',
+              's': '_',
+              't': '_',
+              'u': '_',
+              'v': '_',
+              'w': '_',
+              'x': '_',
+              'y': '_',
+              'z': '_' }
+
+    decodedString = decoder.decode(clue2, cipher2)
+
+    print(clue2)
     print(decodedString)
 
 if __name__ == "__main__": main()
