@@ -145,6 +145,34 @@ def main():
               'y': '_',
               'z': 'h' }
 
+    cipher14 = {' ': ' ',
+              'a': '_',
+              'b': 'l',
+              'c': '_',
+              'd': '_',
+              'e': '_',
+              'f': 'e',
+              'g': '_',
+              'h': '_',
+              'i': '_',
+              'j': 't',
+              'k': '_',
+              'l': '_',
+              'm': 'r',
+              'n': 't',
+              'o': '_',
+              'p': 'o',
+              'q': 'o',
+              'r': '_',
+              's': 'r',
+              't': 'd',
+              'u': 'a',
+              'v': '_',
+              'w': 'o',
+              'x': '_',
+              'y': '_',
+              'z': 'k' }
+
     decodedString = decoder.decode(clue1, cipher1)
     print(decoder.spacedString(clue1))
     print(decoder.spacedString(decodedString))
@@ -153,6 +181,9 @@ def main():
     print(decoder.spacedString(decodedString))
 
     decodedString = decoder.decode(clue1, cipher13)
+    print(decoder.spacedString(decodedString))
+
+    decodedString = decoder.decode(clue1, cipher14)
     print(decoder.spacedString(decodedString))
     print()
 
