@@ -48,10 +48,10 @@ class Decoder:
 
     
 def main():
-    print("Hi from main()")
-    decoder = Decoder(); 
-    codedString = 'lsaj sdlfa'
 
+    decoder = Decoder(); 
+
+    codedString = 'lsaj sdlfa'
     decodedString = decoder.decode(codedString)
 
     print(codedString)
