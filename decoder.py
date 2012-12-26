@@ -117,20 +117,20 @@ def main():
               'y': '_',
               'z': '_' }
 
-    # decodedString = decoder.decode(clue1, cipher1)
-    # print(decoder.spacedString(clue1))
-    # print(decoder.spacedString(decodedString))
-    # print()
+    decodedString = decoder.decode(clue1, cipher1)
+    print(decoder.spacedString(clue1))
+    print(decoder.spacedString(decodedString))
+    print()
 
     decodedString = decoder.decode(clue1, cipher4)
     print(decoder.spacedString(clue1))
     print(decoder.spacedString(decodedString))
     print()
 
-    decodedString = decoder.decode(clue2, cipher2)
-    print(decoder.spacedString(clue2))
-    print(decoder.spacedString(decodedString))
-    print()
+    # decodedString = decoder.decode(clue2, cipher2)
+    # print(decoder.spacedString(clue2))
+    # print(decoder.spacedString(decodedString))
+    # print()
 
 if __name__ == "__main__": main()
 
