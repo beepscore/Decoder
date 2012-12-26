@@ -39,10 +39,10 @@ def main():
               'c': '_',
               'd': '_',
               'e': '_',
-              'f': '_',
+              'f': 'r',
               'g': '_',
               'h': '_',
-              'i': '_',
+              'i': 'n',
               'j': 't',
               'k': '_',
               'l': '_',
@@ -51,12 +51,12 @@ def main():
               'o': '_',
               'p': 'o',
               'q': 'e',
-              'r': '_',
-              's': '?',
+              'r': 'u',
+              's': 'p',
               't': '_',
               'u': '_',
               'v': '_',
-              'w': '_',
+              'w': 'f',
               'x': '_',
               'y': '_',
               'z': 'n' }
@@ -89,7 +89,7 @@ def main():
               'y': '_',
               'z': 't' }
 
-    cipher4 = {' ': ' ',
+    cipher12 = {' ': ' ',
               'a': '_',
               'b': 's',
               'c': '_',
@@ -99,31 +99,60 @@ def main():
               'g': '_',
               'h': '_',
               'i': '_',
-              'j': 't',
+              'j': 'a',
               'k': '_',
               'l': '_',
-              'm': 'h',
+              'm': 'r',
               'n': '_',
               'o': '_',
-              'p': 'o',
-              'q': '_',
+              'p': 'n',
+              'q': 'e',
               'r': '_',
-              's': 'n',
+              's': '_',
               't': '_',
               'u': '_',
               'v': '_',
               'w': '_',
               'x': '_',
               'y': '_',
-              'z': '_' }
+              'z': 'm' }
+
+    cipher13 = {' ': ' ',
+              'a': '_',
+              'b': 's',
+              'c': '_',
+              'd': '_',
+              'e': '_',
+              'f': 'e',
+              'g': '_',
+              'h': '_',
+              'i': '_',
+              'j': 'a',
+              'k': '_',
+              'l': '_',
+              'm': 'r',
+              'n': 't',
+              'o': '_',
+              'p': 't',
+              'q': 'o',
+              'r': '_',
+              's': 'r',
+              't': 'd',
+              'u': 'a',
+              'v': '_',
+              'w': '_',
+              'x': '_',
+              'y': '_',
+              'z': 'h' }
 
     decodedString = decoder.decode(clue1, cipher1)
     print(decoder.spacedString(clue1))
     print(decoder.spacedString(decodedString))
-    print()
 
-    decodedString = decoder.decode(clue1, cipher4)
-    print(decoder.spacedString(clue1))
+    decodedString = decoder.decode(clue1, cipher12)
+    print(decoder.spacedString(decodedString))
+
+    decodedString = decoder.decode(clue1, cipher13)
     print(decoder.spacedString(decodedString))
     print()
 
