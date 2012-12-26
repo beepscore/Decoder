@@ -7,7 +7,7 @@
 class Decoder:
     # In a class method, always list self as first parameter
     def __init__(self):
-        print("init")
+        print()
 
     def decode(self, aString, aCipher):
 
@@ -52,14 +52,14 @@ def main():
               'p': 'o',
               'q': 'e',
               'r': '_',
-              's': 'n',
+              's': '?',
               't': '_',
               'u': '_',
               'v': '_',
               'w': '_',
               'x': '_',
               'y': '_',
-              'z': '_' }
+              'z': 'n' }
 
     cipher2 = {' ': ' ',
               'a': 'm',
@@ -89,7 +89,40 @@ def main():
               'y': '_',
               'z': 't' }
 
-    decodedString = decoder.decode(clue1, cipher1)
+    cipher4 = {' ': ' ',
+              'a': '_',
+              'b': 's',
+              'c': '_',
+              'd': '_',
+              'e': '_',
+              'f': '_',
+              'g': '_',
+              'h': '_',
+              'i': '_',
+              'j': 't',
+              'k': '_',
+              'l': '_',
+              'm': 'h',
+              'n': '_',
+              'o': '_',
+              'p': 'o',
+              'q': '_',
+              'r': '_',
+              's': 'n',
+              't': '_',
+              'u': '_',
+              'v': '_',
+              'w': '_',
+              'x': '_',
+              'y': '_',
+              'z': '_' }
+
+    # decodedString = decoder.decode(clue1, cipher1)
+    # print(decoder.spacedString(clue1))
+    # print(decoder.spacedString(decodedString))
+    # print()
+
+    decodedString = decoder.decode(clue1, cipher4)
     print(decoder.spacedString(clue1))
     print(decoder.spacedString(decodedString))
     print()
@@ -97,6 +130,7 @@ def main():
     decodedString = decoder.decode(clue2, cipher2)
     print(decoder.spacedString(clue2))
     print(decoder.spacedString(decodedString))
+    print()
 
 if __name__ == "__main__": main()
 
