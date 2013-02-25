@@ -1,9 +1,5 @@
 #!/usr/bin/env python3
 
-# syntax.py by Bill Weinman [http://bw.org/]
-# This is an exercise file from Python 3 Essential Training on lynda.com
-# Copyright 2010 The BearHeart Group, LLC
-
 class Decoder:
     # In a class method, always list self as first parameter
     def __init__(self):
