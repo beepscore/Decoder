@@ -24,17 +24,17 @@ class Decoder:
         for aChar in aString:
            spacedString = spacedString + aChar + ' '
         return spacedString
-    
+
 def main():
 
-    decoder = Decoder(); 
+    decoder = Decoder();
 
     clue1 = "Jp wqfht ups csij bqqz jmq zrstfqn xkohtf tpnjmlknai"
     clue2 = "Zfxjx vjx v rdanxj qb nvoo nxvjmrpt mrtmex zfx Mtmt"
     clue3 = "Grb yfqq ytfzdmxj wfm fqrfsj yt ctfze dmjdet, ykg sbk mtte gb ctfz gcztt yfqq ytfzdmxj du sbk rfmg gb hzbxztjj"
 
     # use dict() constructor method to avoid surrounding keys with ''
-    cipher1 = dict( 
+    cipher1 = dict(
               a = '_',
               b = 's',
               c = 'w',
